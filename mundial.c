@@ -90,7 +90,7 @@ Mundial transformardatos(char t[50]){
 return m;
 };
 
-///*****Carga por teclado******************************
+///***************Carga por teclado******************************
 /*
 Mundial cargarmundial(){
 
@@ -112,7 +112,7 @@ Mundial cargarmundial(){
 
 void mostraranfitrion(Mundial m){
 
-     printf("\n ----------- Mundial 2022 ----------- \n");
+     printf("\n\n ----------- Mundial 2022 ----------- \n");
      printf("\nNombre del anfitrion: %s \n", m->paisorg);
      printf("Cantidad de estadios: %d \n", m->cantestadios);
 
@@ -126,17 +126,58 @@ void mostraranfitrion(Mundial m){
 
 };
 
-void eliminarjugadormundial(Mundial m){
+void eliminarjugadormundial(Mundial m,char n[20]){
 
-    /*char nombreaux[20];
-    printf("\n -Ingrese el jugador que quiere eliminar: ");
+    printf("\n--------------------------------------\n");
+    printf("ingrese el Jugador que quiere eliminar: ");
     fflush(stdin);
-    gets(nombreaux);
-*/
+    gets(n);
+
     for(int i=0;i<TAM;i++){
 
-        eliminarjugador(m->paises[i],"Mbappe");
+        if(gettitulos(m->paises[i])!=-1){
 
+            eliminarjugador(m->paises[i],n);
+
+        }
+    }
+};
+
+void ordenarporjugadormundial(Mundial m){
+
+    for(int i=0;i<TAM;i++){
+
+        if(gettitulos(m->paises[i])!=-1){
+
+            ordenarporjugador(m->paises[i]);
+
+        }
+    }
+};
+
+void buscarjugadorpornombremundial(Mundial m,char n[20]){
+
+    printf("\n--------------------------------------\n");
+    printf("ingrese el Jugador que quiere buscar: ");
+    fflush(stdin);
+    gets(n);
+
+    int aux;
+
+    for(int i=0;i<TAM;i++){
+
+      aux=buscarjugadorpornombre(m->paises[i],n);
+
+        if(gettitulos(m->paises[i])!=-1){
+
+               if (aux!=-1){
+
+                    mostrarencontrado(m->paises[i],n);
+                    i=TAM;
+
+               }
+
+        }
     }
 
 };

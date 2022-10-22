@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1666309472 source:c:\users\alejo\desktop\universidad\programacion\tda\tdafutbol\main.c
+1666454331 source:c:\users\alejo\desktop\universidad\programacion\tda\tdafutbol\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -7,11 +7,11 @@
 	"jugadores.h"
 	"mundial.h"
 
-1666309462 c:\users\alejo\desktop\universidad\programacion\tda\tdafutbol\seleccion.h
+1666455903 c:\users\alejo\desktop\universidad\programacion\tda\tdafutbol\seleccion.h
 
-1666228149 c:\users\alejo\desktop\universidad\programacion\tda\tdafutbol\jugadores.h
+1666372488 c:\users\alejo\desktop\universidad\programacion\tda\tdafutbol\jugadores.h
 
-1666230561 source:c:\users\alejo\desktop\universidad\programacion\tda\tdafutbol\jugadores.c
+1666372488 source:c:\users\alejo\desktop\universidad\programacion\tda\tdafutbol\jugadores.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -19,7 +19,7 @@
 	"jugadores.h"
 	"mundial.h"
 
-1666309442 source:c:\users\alejo\desktop\universidad\programacion\tda\tdafutbol\seleccion.c
+1666456923 source:c:\users\alejo\desktop\universidad\programacion\tda\tdafutbol\seleccion.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -27,9 +27,9 @@
 	"jugadores.h"
 	"mundial.h"
 
-1666309442 c:\users\alejo\desktop\universidad\programacion\tda\tdafutbol\mundial.h
+1666455903 c:\users\alejo\desktop\universidad\programacion\tda\tdafutbol\mundial.h
 
-1666309442 source:c:\users\alejo\desktop\universidad\programacion\tda\tdafutbol\mundial.c
+1666457135 source:c:\users\alejo\desktop\universidad\programacion\tda\tdafutbol\mundial.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

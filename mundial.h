@@ -11,6 +11,10 @@ Mundial transformardatos(char t[50]);
 //Mundial cargarmundial();
 void mostraranfitrion(Mundial m);
 
-void eliminarjugadormundial(Mundial m);
+void eliminarjugadormundial(Mundial m,char n[20]);
+
+void ordenarporjugadormundial(Mundial m);
+
+void buscarjugadorpornombremundial(Mundial m,char n[20]);
 
 #endif // MUNDIAL_H_INCLUDED
