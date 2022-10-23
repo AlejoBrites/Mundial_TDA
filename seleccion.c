@@ -155,9 +155,14 @@ void escribirjugadores(Equipo e){
 
     FILE * archivo=fopen("quiYjug.txt","a");
 
+    fprintf(archivo,"   Seleccion %s // Titulos: %d \n",e->nomdelpais,e->titulos);
+
+    fprintf(archivo,"-------------------------------------------------------------------\n");
     for(int i=0;i<TAMA ;i++){
 
+
        if(getdorsal(e->plantel[i])!=-1){
+
          fprintf(archivo,"      Nombre del jugador %s // Dorsal: %d \n",getnombre(e->plantel[i]),getdorsal(e->plantel[i]));
 
        }

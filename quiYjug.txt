@@ -1,0 +1,9 @@
+Mundial 2022// Sede: Qatar // Cant de estadios: 16 
+
+   Seleccion arg // Titulos: 100 
+-------------------------------------------------------------------      Nombre del jugador dibu // Dorsal: 1 
+      Nombre del jugador montiel // Dorsal: 4 
+      Nombre del jugador messi // Dorsal: 10 
+      Nombre del jugador cuti // Dorsal: 13 
+   Seleccion fran // Titulos: 11 
+-------------------------------------------------------------------      Nombre del jugador dembele // Dorsal: 11 

@@ -190,7 +190,7 @@ void escribirmundial(Mundial m){
     for(int i=0;i<TAM ;i++){
 
        if(gettitulos(m->paises[i])!=-1){
-         fprintf(archivo,"   Seleccion %s // Titulos: %d \n",getseleccion(m->paises[i]),gettitulos(m->paises[i]));
+        // fprintf(archivo,"   Seleccion %s // Titulos: %d \n",getseleccion(m->paises[i]),gettitulos(m->paises[i]));
 
          escribirjugadores(m->paises[i]);
 

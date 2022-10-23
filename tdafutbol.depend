@@ -19,7 +19,7 @@
 	"jugadores.h"
 	"mundial.h"
 
-1666546096 source:c:\users\alejo\desktop\universidad\programacion\tda\tdafutbol\seleccion.c
+1666547623 source:c:\users\alejo\desktop\universidad\programacion\tda\tdafutbol\seleccion.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -29,7 +29,7 @@
 
 1666545908 c:\users\alejo\desktop\universidad\programacion\tda\tdafutbol\mundial.h
 
-1666546370 source:c:\users\alejo\desktop\universidad\programacion\tda\tdafutbol\mundial.c
+1666547797 source:c:\users\alejo\desktop\universidad\programacion\tda\tdafutbol\mundial.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
