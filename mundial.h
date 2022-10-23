@@ -17,4 +17,6 @@ void ordenarporjugadormundial(Mundial m);
 
 void buscarjugadorpornombremundial(Mundial m,char n[20]);
 
+void escribirmundial(Mundial m);
+
 #endif // MUNDIAL_H_INCLUDED

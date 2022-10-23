@@ -8,6 +8,7 @@ typedef struct JugadoresE * JugadoresP;
 
 void mostrarjugadores(JugadoresP j);
 
+
 JugadoresP cargarjugadores();
 
 JugadoresP cargarjugadoresvacio();

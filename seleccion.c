@@ -73,6 +73,12 @@ int gettitulos(Equipo e){
 return e->titulos;
 };
 
+char * getseleccion(Equipo e){
+
+
+return e->nomdelpais;
+};
+
 void eliminarjugador(Equipo e,char n[20]){
 
     for(int i=0;i<TAMA;i++){
@@ -107,7 +113,7 @@ void ordenarporjugador(Equipo e){
     }
 };
 
-Equipo buscarjugadorpornombre(Equipo e,char n[20]){
+int buscarjugadorpornombre(Equipo e,char n[20]){
 
     int ret=-1;
 
@@ -142,5 +148,20 @@ void mostrarencontrado(Equipo e,char n[20]){
        printf("\n******** JUGADOR NO ENCONTRADO ********\n");
 
     }
+
+};
+
+void escribirjugadores(Equipo e){
+
+    FILE * archivo=fopen("quiYjug.txt","a");
+
+    for(int i=0;i<TAMA ;i++){
+
+       if(getdorsal(e->plantel[i])!=-1){
+         fprintf(archivo,"      Nombre del jugador %s // Dorsal: %d \n",getnombre(e->plantel[i]),getdorsal(e->plantel[i]));
+
+       }
+    }
+
 
 };

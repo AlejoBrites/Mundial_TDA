@@ -36,6 +36,8 @@ int main()
     printf("\n\n-------- BUSQUEDA DE JUGADOR--------");
     buscarjugadorpornombremundial(m1,nomdos);
 
+    escribirmundial(m1);
+
 
     return 0;
 }
