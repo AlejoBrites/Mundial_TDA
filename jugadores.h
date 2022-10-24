@@ -18,4 +18,6 @@ char * getnombre(JugadoresP j);
 
 void setdorsal(JugadoresP j,int d);
 void setnombre(JugadoresP j,char n[20]);
+
+void destruirjugadores(JugadoresP j);
 #endif // JUGADORES_H_INCLUDED

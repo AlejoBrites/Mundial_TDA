@@ -24,4 +24,6 @@ int buscarjugadorpornombre(Equipo e,char n[20]);
 void mostrarencontrado(Equipo e,char n[20]);
 
 void escribirjugadores(Equipo e);
+
+void destruirequipo(Equipo e);
 #endif // SELECCION_H_INCLUDED

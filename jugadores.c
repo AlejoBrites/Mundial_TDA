@@ -63,3 +63,9 @@ void setnombre(JugadoresP j,char n[20]){
      strcpy(j->nombre,n);
 
 };
+
+void destruirjugadores(JugadoresP j){
+
+     free(j);
+
+};

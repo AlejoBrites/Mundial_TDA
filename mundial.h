@@ -19,4 +19,6 @@ void buscarjugadorpornombremundial(Mundial m,char n[20]);
 
 void escribirmundial(Mundial m);
 
+void destruirmundial(Mundial m);
+
 #endif // MUNDIAL_H_INCLUDED

@@ -143,10 +143,6 @@ void mostrarencontrado(Equipo e,char n[20]){
        printf("*************************************************\n");
        i=TAMA;
 
-    }else{
-
-       printf("\n******** JUGADOR NO ENCONTRADO ********\n");
-
     }
 
 };
@@ -155,7 +151,7 @@ void escribirjugadores(Equipo e){
 
     FILE * archivo=fopen("quiYjug.txt","a");
 
-    fprintf(archivo,"   Seleccion %s // Titulos: %d \n",e->nomdelpais,e->titulos);
+    fprintf(archivo,"\n   Seleccion %s // Titulos: %d \n",e->nomdelpais,e->titulos);
 
     fprintf(archivo,"-------------------------------------------------------------------\n");
     for(int i=0;i<TAMA ;i++){
@@ -168,5 +164,17 @@ void escribirjugadores(Equipo e){
        }
     }
 
+
+};
+
+void destruirequipo(Equipo e){
+
+     for(int i=0;i<TAMA;i++){
+
+        destruirjugadores(e->plantel[i]);
+
+     }
+
+     free(e);
 
 };

@@ -166,18 +166,19 @@ void buscarjugadorpornombremundial(Mundial m,char n[20]){
 
     for(int i=0;i<TAM;i++){
 
-      aux=buscarjugadorpornombre(m->paises[i],n);
-
-        if(gettitulos(m->paises[i])!=-1){
-
-               if (aux!=-1){
-
-                    mostrarencontrado(m->paises[i],n);
-                    i=TAM;
+     if(gettitulos(m->paises[i])!=-1){
+         aux=buscarjugadorpornombre(m->paises[i],n);
+            if (aux!=-1){
+                mostrarencontrado(m->paises[i],n);
+                i=TAM;
 
                }
-
         }
+    }
+    if(aux==-1){
+
+       printf("\n******** JUGADOR NO ENCONTRADO ********\n");
+
     }
 
 };
@@ -185,17 +186,27 @@ void buscarjugadorpornombremundial(Mundial m,char n[20]){
 void escribirmundial(Mundial m){
 
     FILE * archivo=fopen("quiYjug.txt","a");
-    fprintf(archivo,"Mundial 2022// Sede: %s // Cant de estadios: %d \n\n",m->paisorg,m->cantestadios);
+    fprintf(archivo,"Mundial 2022// Sede: %s // Cant de estadios: %d \n",m->paisorg,m->cantestadios);
 
     for(int i=0;i<TAM ;i++){
 
        if(gettitulos(m->paises[i])!=-1){
-        // fprintf(archivo,"   Seleccion %s // Titulos: %d \n",getseleccion(m->paises[i]),gettitulos(m->paises[i]));
 
          escribirjugadores(m->paises[i]);
 
        }
     }
 
+
+};
+
+void destruirmundial(Mundial m){
+
+    for(int i=0;i<TAM;i++){
+
+       destruirequipo(m->paises[i]);
+
+    }
+    free(m);
 
 };

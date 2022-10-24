@@ -38,6 +38,7 @@ int main()
 
     escribirmundial(m1);
 
+    destruirmundial(m1);
 
     return 0;
 }
